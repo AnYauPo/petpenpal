@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#0f1a16"><title>Join me on Pet Pen Pal</title>
+<meta name="description" content="Your pet. A pen pal. A world to explore.">
+<meta property="og:title" content="Join me on Pet Pen Pal"><meta property="og:description" content="Your pet. A pen pal. A world to explore.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://petpenpal.anyaupo.com/invite.html">
+
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0f1a16;color:#efe8d8;font:18px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:center}main{max-width:480px;margin:0 auto;padding:64px 24px}img{width:96px;height:96px;border-radius:24px}h1{font-size:34px;line-height:1.15;margin:28px 0 16px}p{color:#a0ae9f}a{color:#c4a15a}.button{display:block;padding:16px;margin:16px 0;border:1px solid #c4a15a;border-radius:14px;text-decoration:none;font-weight:600}.primary{background:#c4a15a;color:#0f1a16}:focus-visible{outline:3px solid #efe8d8;outline-offset:4px}small{display:block;margin-top:32px;color:#a0ae9f}
+</style></head><body><main>
+<span aria-hidden="true" style="font-size:72px">✉</span><h1>Join me on Pet Pen Pal</h1>
+<p>Your pet. A pen pal. A world to explore.</p>
+<a class="button primary" id="open" href="petcrown://friends">Open in Pet Pen Pal</a>
+<p>App Store link not available yet.</p>
+<p id="hint">After installing, return here to open your invite.</p>
+<small>For players 13 and up. Invite someone you know.</small>
+<small><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></small>
+</main><script>const button=document.getElementById('open');
+const token=location.hash.slice(1);
+if(/^[a-f0-9]{32}$/.test(token)) button.href='petcrown://friends/add/'+token;
+else document.getElementById('hint').textContent='Ask your friend for a new invite link.';</script></body></html>
